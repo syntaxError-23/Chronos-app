@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Chronos Log In</title>
+</head>
+<body>
+    <div id="colour-filter" class="p-2">
+
+        <div class="container-fluid py-1" id="content">
+        
+
+            <div id="logo-wrapper" class="d-flex justify-content-center mt-2">
+                <img src="/assets/images/CHRONOS-logo-300dpi.svg" alt="Chronos logo">
+            </div>
+
+            <div id="tagline-wrapper">
+                <h1 id="tagline" class="text-center">FULL CONTROL AROUND THE CLOCK</h1>
+            </div>
+
+            <div id="login-area" class="hide p-4 my-5">
+
+                <form id="login-form">
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Username</label>
+                      <input type="text" class="form-control" id="username" aria-describedby="username" placeholder="Enter your username">
+                      <div id="username-help" class="form-text">This is case sensitive</div>
+                    </div>
+
+                    <div id="login-button-wrapper" class="btn-wrapper">
+                        <button type="submit" class="submit-btn" id="login-submit-btn">Submit</button>
+                    </div>
+                </form>
+
+                <p id="signup-prompt" class="prompt-msg mt-4">First time here? <span id="signup-link" class="prompt-link">Sign up</span></p>
+            </div>
+
+            
+            <div id="signup-area" class="p-4 mb-5">
+
+                <form>
+                    <div class="mb-3">
+                      <label for="new-username" class="form-label border-color-success">Username</label>
+                      <input type="text" class="form-control" id="new-username" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="first-name" aria-describedby="fn-help">
+                        <div id="fn-help" class="form-text"></div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" aria-describedby="ln-help">
+                        <div id="ln-help" class="form-text">This is confidential. Unless you can access local storage</div>
+                      </div>
+
+                      <div id="signup-button-wrapper" class="btn-wrapper">
+                        <button type="submit" class="submit-btn" id="signup-submit-btn">Submit</button>
+                    </div>
+
+                    <p id="login-prompt" class="prompt-msg acc-prompt mt-4">Been here before? <span id="login-link" class="prompt-link">Log in</span></p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
